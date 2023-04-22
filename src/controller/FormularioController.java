@@ -1,7 +1,7 @@
 package controller;
 
 import Veterinaria.Veterinaria;
-import View.FormularioReview;
+import View.FormularioView;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
@@ -15,11 +15,11 @@ import model.Size;
  */
 public class FormularioController implements ActionListener {
 
-    private FormularioReview formulario;
+    private FormularioView formulario;
     private Veterinaria veterinaria;
     private Servicio servicio;
 
-    public FormularioController(FormularioReview formulario, Veterinaria veterinaria) {
+    public FormularioController(FormularioView formulario, Veterinaria veterinaria) {
         this.formulario = formulario;
         this.veterinaria = veterinaria;
         ActionListener(this);
@@ -33,6 +33,7 @@ public class FormularioController implements ActionListener {
     }
 
     public void limpiarCampos() {
+        
         formulario.txtNombre.setText("");
         formulario.txtRaza.setText("");
         formulario.txtTamanio.setText("");
@@ -41,6 +42,7 @@ public class FormularioController implements ActionListener {
         formulario.chkCorteUnias.setState(false);
         formulario.chkVacunas.setState(false);
         formulario.areaResultado.setText("");
+        
     }
 
     @Override

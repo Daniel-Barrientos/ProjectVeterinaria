@@ -1,6 +1,6 @@
 package Veterinaria;
 
-import View.FormularioReview;
+import View.FormularioView;
 import controller.FormularioController;
 import java.util.ArrayList;
 import model.Mascota;
@@ -48,7 +48,7 @@ public class Veterinaria {
 
     public static void main(String[] args) {
 
-        FormularioReview formulario = new FormularioReview();
+        FormularioView formulario = new FormularioView();
         formulario.setTitle("Happy Pet");
 
         Veterinaria veterinaria = new Veterinaria();
